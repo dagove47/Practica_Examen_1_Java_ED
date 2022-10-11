@@ -12,6 +12,11 @@ package Practica_Examen_1_Java_ED;
 public class Practica_Examen_1_Java_ED {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        helper help = new helper();
+        Menu mainMenu = new Menu();
+
+        help.imprimeMensaje("*Bienvenido al Sistema de la Practica de Examen!*");
+        mainMenu.menu();
+        help.imprimeMensaje("Gracias por visitar!");
     }
 }
