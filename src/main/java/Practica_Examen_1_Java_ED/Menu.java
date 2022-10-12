@@ -14,6 +14,7 @@ public class Menu {
 
     helper help = new helper();
     Ejercicio_1 e1 = new Ejercicio_1();
+    Ejercicio3 e3 = new Ejercicio3();
 
     public void menu() {
         int opcion;
@@ -23,10 +24,13 @@ public class Menu {
             switch (opcion) {
                 case 1:
                     e1.exercise_1();
+                    break;
                 case 2:
                     menuArchivos();
+                    break;
                 case 3:
-
+                    e3.Ej3Solution();
+                    break;
                 case 4:
                     break;
 

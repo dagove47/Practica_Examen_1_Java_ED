@@ -4,6 +4,8 @@
  */
 package Practica_Examen_1_Java_ED;
 
+import javax.swing.*;
+
 /**
  *
  * @author David Gomez, Gabriel Brilla, Gerald Blanco, Alexander Torres
@@ -22,6 +24,7 @@ public class Ejercicio_1 {
         double i = n;
         help.imprimeMensaje("Resultado utilizando ciclos for: " + calcCos(x,n) + "\n\n" +
                 "Resultado utilizando recursion: " + calcCosR(x,n,i));
+        resultR = 0;
 
     }
 
@@ -37,36 +40,30 @@ public class Ejercicio_1 {
     public double factorial(double num) {
         double result = 1.0;
 
-        for (int i = 0; i <= num; i++) {
+        for (int i = 1; i <= num; i++) {
             result = result * i;
         }
         return result;
     }
     public double calcCosR(double x, double n, double i){
-        double resultR = 0;
 
         if (i > 0){
             factR = 1;
             resultR += (Math.pow(-1, n) / factorialR(2 * n)) * Math.pow(x, 2 * n);
             calcCosR(x,n, i-1 );
-
         }
         return resultR;
     }
 
 
     public double factorialR(double num) {
-        double factR = 1.0;
-        if (num < 0) {
-            help.imprimeMensaje("Valor incorrecto \n\n" +
-                    "El numero al que desea aplicar factorial es negativo");
-            System.exit(0);
-        } else if (num == 0) {
-            factR *= 1;
-        } else {
-            factR = factR  * (num);
-            factorialR(num - 1);
+
+        if (num == 0){
+            return 1 ;
+        }else{
+            return num * factorialR(num - 1);
         }
-        return factR ;
+
     }
 }
+

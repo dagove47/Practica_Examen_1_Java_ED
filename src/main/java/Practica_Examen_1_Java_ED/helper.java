@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author gblan
+ * @author David Gomez, Gabriel Brilla, Gerald Blanco, Alexander Torres
  */
 public class helper {
 

@@ -7,7 +7,7 @@ package Practica_Examen_1_Java_ED;
 
 /**
  *
- * @author dagove47
+ * @author David Gomez, Gabriel Brilla, Gerald Blanco, Alexander Torres
  */
 public class Practica_Examen_1_Java_ED {
 
